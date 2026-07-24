@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Build with Maven
-        run: mvn -B labs/08-docker/pom.xml package -DskipTests
+        run: mvn -B package -DskipTests
 
       - name: Run tests
-        run: mvn -B -f labs/08-docker/pom.xml test
+        run: mvn -B -f test
